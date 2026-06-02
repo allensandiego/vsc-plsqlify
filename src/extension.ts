@@ -20,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
         // 1. Get configurations from VS Code settings
         const vscodeConfig = vscode.workspace.getConfiguration('plsql.format');
         
-        // 2. Load configurations from workspace file (.plsqlurc / plsql-formatter.json)
+        // 2. Load configurations from workspace file (.plsqlifyrc / plsqlify.json)
         let fileConfig = {};
         if (vscode.workspace.workspaceFolders && vscode.workspace.workspaceFolders.length > 0) {
           const rootPath = vscode.workspace.workspaceFolders[0].uri.fsPath;

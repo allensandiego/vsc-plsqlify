@@ -23,6 +23,8 @@ export const DEFAULT_CONFIG: FormatterConfig = {
 
 export function loadConfigFile(workspaceRoot: string): Partial<FormatterConfig> {
   const possiblePaths = [
+    path.join(workspaceRoot, '.plsqlifyrc'),
+    path.join(workspaceRoot, 'plsqlify.json'),
     path.join(workspaceRoot, '.plsqlurc'),
     path.join(workspaceRoot, 'plsql-formatter.json')
   ];
