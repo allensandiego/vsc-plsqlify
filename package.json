@@ -3,7 +3,7 @@
   "publisher": "allensandiego",
   "displayName": "Plsqlify",
   "description": "Premium formatter for Oracle PL/SQL stored procedures and SQL queries.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "icon.png",
   "repository": {
     "type": "git",
@@ -17,7 +17,8 @@
   ],
   "activationEvents": [
     "onLanguage:sql",
-    "onLanguage:plsql"
+    "onLanguage:plsql",
+    "onLanguage:oracle-plsql"
   ],
   "main": "./out/extension.js",
   "contributes": {
