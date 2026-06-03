@@ -7,9 +7,9 @@ export function activate(context: vscode.ExtensionContext) {
 
   const formatterProvider = vscode.languages.registerDocumentFormattingEditProvider(
     [
-      { scheme: 'file', language: 'sql' },
-      { scheme: 'file', language: 'plsql' },
-      { scheme: 'file', language: 'oracle-plsql' }
+      { language: 'sql' },
+      { language: 'plsql' },
+      { language: 'oracle-plsql' }
     ],
     {
       provideDocumentFormattingEdits(
