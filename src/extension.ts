@@ -9,7 +9,15 @@ export function activate(context: vscode.ExtensionContext) {
     [
       { language: 'sql' },
       { language: 'plsql' },
-      { language: 'oracle-plsql' }
+      { language: 'oracle-plsql' },
+      { language: 'oracle_sql' },
+      { language: 'oraclesql' },
+      { language: 'oracle-sql' },
+      { language: 'oracle-package' },
+      { language: 'oracle-package-body' },
+      { language: 'oracle-package-spec' },
+      { language: 'oracle_package_body' },
+      { language: 'oracle_package_spec' }
     ],
     {
       provideDocumentFormattingEdits(
